@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Yoyū: energy log, preparing situations and worry time. Everything stays on your device." />
+    <meta name="theme-color" content="#2f6f6a" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <title>Yoyū</title>
+  </head>
+  <body>
+    <a id="skip" class="skip" href="#app">Aller au contenu</a>
+    <header>
+      <a class="brand" href="#/"><img src="./icon.svg" alt="" width="28" height="28" /> Yoyū</a>
+      <nav id="nav"></nav>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <p id="live" class="live" role="status" aria-live="polite"></p>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
